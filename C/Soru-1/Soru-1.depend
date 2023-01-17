@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1673912940 source:c:\1210505904_batuhan_salkım\soru-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1670605135 source:c:\users\batuh\onedrive\masaüstü\1210505904_batuhan_salkım\soru-1\main.c
+	<stdio.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+
