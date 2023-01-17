@@ -67,6 +67,7 @@ int main(){
 */
 
 // 4. SORU
+/*
 int main(){
     int a,b;
 
@@ -79,13 +80,75 @@ int main(){
                 printf("sayilar birbirine esit degil\n");
             printf("%d sayisi %d sayisindan daha kucuktur",a,b);
         }
-
+        else{
+            printf("sayilar birbirine esit degil\n");
+            printf("%d sayisi %d sayisindan daha kucuktur",b,a);
+        }
     }
     else{
         printf("sayilar birbirine esit");
     }
 
+}
+*/
+
+//5.Soru
+/*
+int main(){
+    int a;
+
+    printf("bir sayi giriniz :");
+    scanf("%d",&a);
+
+    while(a!=0){
+        printf("%d\n",a);
+        a-=1;
+    }
+}
+*/
+//6. SOURU
+/*
+int main(){
+    int a,i;
+
+    printf("sayi giriniz : ");
+    scanf("%d",&a);
+
+    int sonuc=0;
+    i=1;
+    while(i<=a){
+        sonuc = sonuc +i;
+        i++;
+    }
+    printf("sayilarin toplami : %d",sonuc);
+}
+*/
+
+//7. SORU
+int main(){
+    float sayi;
+
+    printf("bir sayi girisi yapiniz: ");
+    scanf("%f",&sayi);
+
+    printf("f(%.3f)=%.3f",(sayi*sayi*sayi)+ (13*sayi*sayi) + (47*sayi) + 5);
 
 
 }
+/*
+//8. SORU
 
+int main(){
+printf("");
+}
+//9. SORU
+int main(){
+printf("");
+
+}
+//10. SORU
+int main(){
+printf("");
+
+}
+*/
