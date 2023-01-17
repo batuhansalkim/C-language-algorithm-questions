@@ -36,9 +36,56 @@ int main(){
 */
 
 //3.SORU
-
+/*
 int main(){
+    int a,b,c;
+    int min,max;
+
+    printf("Lutfen 3 sayi giriniz : ");
+    scanf("%d%d%d",&a,&b,&c);
+
+    max = a;
+
+    if(b>max){
+       max = b;
+    }
+    if(c>max){
+        max = c;
+    }
+    printf("Max degerimiz : %d\n ",max);
+
+    min = a;
+    if(b<min){
+        min = b;
+    }
+    if(c<min){
+        min = c;
+    }
+    printf("min degeri : %d",min);
 
 }
+*/
 
+// 4. SORU
+int main(){
+    int a,b;
+
+    printf("iki sayi giriniz ondalikli da olabilir : ");
+    scanf("%d%d",&a,&b);
+
+    if(a!=b){
+
+        if(a<b){
+                printf("sayilar birbirine esit degil\n");
+            printf("%d sayisi %d sayisindan daha kucuktur",a,b);
+        }
+
+    }
+    else{
+        printf("sayilar birbirine esit");
+    }
+
+
+
+}
 
