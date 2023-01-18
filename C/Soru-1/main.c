@@ -211,7 +211,6 @@ int main(){
 */
 
 //12.SORU
-
 /*
 int main(){
     float en,boy,yukseklik;
@@ -252,6 +251,7 @@ int main(){
 }
 */
 //15.SORU
+/*
 int main(){
     char kod;
     float alan,ucret=0;
@@ -276,5 +276,52 @@ int main(){
         printf("gecersiz harf T B S den birini giriniz ");
     }
 }
+*/
 
+//16.SORU
+/*
+int main(){
+    int n;
 
+    printf("pozitif bir sayi giriniz :");
+    scanf("%d",&n);
+
+    if( (n%13==0) && (n%17==0)){
+        printf("sayimiz 13 ve 17 ye tam bolunuyor");
+    }
+    else if(n%13==0){
+        printf("sayimiz 13 e tam bolunuyor");
+    }
+    else if(n%17==0){
+        printf("sayimiz 17 ye tam bolunuyor");
+    }
+    else{
+        printf("sayimiz 13 ve 17 ye bolunemiyor");
+    }
+}
+*/
+//17.SORU
+/*
+int main(){
+    int a,b,c;
+    float ortalama;
+    printf("lütfen 3 tane sayi giriniz :");
+    scanf("%d%d%d",&a,&b,&c);
+
+    ortalama = (a+b+c) / 3;
+    printf("sayilarin ortalamasi : %.2f",ortalama);
+
+}
+*/
+//18. SORU
+
+int main(){
+    float hiz,zaman;
+    int yol = 450;
+
+    printf("zamani saat cinsinden giriniz :");
+    scanf("%f",&zaman);
+
+    hiz = yol / zaman;
+    printf("arabanin ortalama hizi :%.2f",hiz);
+}
