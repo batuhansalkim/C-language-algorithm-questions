@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 #define PI 3.141
 //SORU 1
 
@@ -314,7 +315,7 @@ int main(){
 }
 */
 //18. SORU
-
+/*
 int main(){
     float hiz,zaman;
     int yol = 450;
@@ -325,3 +326,48 @@ int main(){
     hiz = yol / zaman;
     printf("arabanin ortalama hizi :%.2f",hiz);
 }
+*/
+//19.SORU
+/*
+int main(){
+ char can;
+ printf("bir karakter giriniz :");
+ scanf("%c",&can);
+ if((can >='A') && (can <= 'Z')){
+    printf("kucuk harf yazimi : %c",tolower(can));
+ }else{
+     printf("yanlis karakter girisi yapildi");
+ }
+}
+*/
+//20.SORU
+int main(){
+    float x;
+    do{
+        printf("pozitif bir sayi giriniz :");
+        scanf("%f",&x);
+        if(x<0){
+            printf("pozitif sayi gir ");
+        }
+        if(x<0) continue;
+        printf("sayinin karekoku : %.2f\n",sqrt(x));
+    }
+    while(x);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
