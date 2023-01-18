@@ -125,6 +125,7 @@ int main(){
 */
 
 //7. SORU
+/*
 int main(){
     float sayi;
 
@@ -135,20 +136,79 @@ int main(){
 
 
 }
-/*
-//8. SORU
+*/
 
+
+//8. SORU
+/*
 int main(){
-printf("");
+    int a, b;
+
+    printf("iki tane sayi girisi yapiniz :\n");
+    scanf("%d%d",&a,&b);
+
+      if((a>0 && b>0) || (a<0 && b<0)){
+        printf("sign(%d * %d) = +1",a,b);
+      }
+      else if((a>0 && b<0) || (a<0 && b>0)){
+        printf("sign(%d * %d) = -1",a,b);
+      }
+      else{
+        printf("sign(%d * %d ) = 0",a,b);
+      }
 }
+*/
+
+/*
 //9. SORU
 int main(){
-printf("");
+    int sayi;
+    int i=0;
 
+    printf("sayi giriniz :");
+    scanf("%d",&sayi);
+
+    while(i<=sayi){
+            if(i%17==0){
+                printf("sayi :%d\n",i);
+            }
+            i++;
+    }
 }
+*/
+
 //10. SORU
+/*
 int main(){
-printf("");
+
+    int sayi,birlerBas,onlarBas,yuzlerBas;
+
+    printf("bir sayi giriniz : ");
+    scanf("%d",&sayi);
+    birlerBas = sayi%10;
+    onlarBas = sayi %100/10;
+    yuzlerBas = sayi /100;
+    printf("birler basamagi : %d\n",birlerBas);
+    printf("onlar basamagi : %d\n",onlarBas);
+    printf("yuzler basamagi : %d",yuzlerBas);
 
 }
 */
+
+//11.SORU
+int main(){
+    float yol,km;
+
+    printf("kac mil yol gittiginizi giriniz :");
+    scanf("%f",&yol);
+
+    km = yol*1609;
+    printf("Girdiginiz mili km'ye ceviriyoruz");
+
+    printf("Mil : %f\n Km: %f",yol,km);
+}
+
+
+
+
+
