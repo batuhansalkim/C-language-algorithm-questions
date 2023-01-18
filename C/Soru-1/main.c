@@ -341,23 +341,60 @@ int main(){
 }
 */
 //20.SORU
+/*
 int main(){
-    float x;
-    do{
-        printf("pozitif bir sayi giriniz :");
-        scanf("%f",&x);
-        if(x<0){
-            printf("pozitif sayi gir ");
-        }
-        if(x<0) continue;
-        printf("sayinin karekoku : %.2f\n",sqrt(x));
+    int a,b;
+    printf("iki sayi girisi yapiniz :");
+    scanf("%d%d",&a,&b);
+    if((a<0 && b<0) || (a>0 && b>0)){
+        printf("sayilarin carpimi pozitif");
     }
-    while(x);
+    else if(a>0 || b>0){
+        printf("sayilarin carpim degeri sifirdir ");
+    }else{
+        printf("carpim degeri negeatiftir");
+    }
+
 }
+*/
+//21.SORU
+/*
+int main(){
+    int a,b,c;
+    printf("ucgenin 3 acisini giriniz :");
+    scanf("%d%d%d",&a,&b,&c);
 
+    if(a+b+c == 180){
+        if(a==60 && b== 60 && c==60){
+            printf("bu bir eskenar ucgendir\n");
+        }
+        else if(a==b || a==c || b==c){
+            printf("bu bir ikizkenar ucgendir\n");
+        }
+        else{
+            printf("bu bir cesitkenar ucgendir");
+        }
+    }
+    else{
+        printf("bu bir ucgen degildir");
+    }
+}
+*/
 
+//22.SORU
+int main(){
+    int gorusme_suresi,ek_ucret;
+    printf("kac dk telefon gorusmesi yaptiniz :");
+    scanf("%d",&gorusme_suresi);
 
-
+    if(gorusme_suresi<=3){
+        printf("odeyeceginiz ucret 0.25tl");
+    }
+    else{
+        ek_ucret = 0.25 + ((gorusme_suresi-3) * 0.08);
+        printf("odemeniz gereken ucret :  %d tl",ek_ucret);
+    }
+}
 
 
 
