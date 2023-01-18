@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#define PI 3.141
 //SORU 1
 
 /*
@@ -19,7 +19,7 @@ int main(){
 int main(){
     int a,b,h;
 
-    printf("Dikd�rtgen prizman�n a,b ve h uzunluklarini giriniz : \n"  );
+    printf("Dikdörtgen prizmanýn a,b ve h uzunluklarini giriniz : \n"  );
     scanf("%d%d%d",&a,&b,&h);
 
     int taban_alani = a*b;
@@ -196,6 +196,7 @@ int main(){
 */
 
 //11.SORU
+/*
 int main(){
     float yol,km;
 
@@ -207,8 +208,73 @@ int main(){
 
     printf("Mil : %f\n Km: %f",yol,km);
 }
+*/
 
+//12.SORU
 
+/*
+int main(){
+    float en,boy,yukseklik;
+    printf("Havuzumuzun eni boyu ve yüksekligi :");
+    scanf("%f%f%f",&en,&boy,&yukseklik);
+    printf("Havuzumuz %f kadar su alabilir.",en*boy*yukseklik);
+}
+*/
 
+//13.SORU
+/*
+int main(){
+    int a,b,c;
+    printf("A sayisini giriniz :");
+    scanf("%d",&a);
+    printf("B sayisini giriniz :");
+    scanf("%d",&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("A sayisinin degeri : %d\n",a);
+    printf("B sayisinin degeri : %d\n",b);
+}
+*/
+
+//14.SORU
+/*
+int main(){
+    float metre,tutar;
+
+    printf("Kac metrekare kaplama yapilacak :");
+    scanf("%f",&metre);
+
+    tutar = 200 + (metre * 40);
+
+    printf("ödenmesi gereken para tutarı : %.2f",tutar);
+
+}
+*/
+//15.SORU
+int main(){
+    char kod;
+    float alan,ucret=0;
+    printf("Hali tipini seciniz T B S :");
+    scanf("%c",&kod);
+    printf("lutfen alani giriniz :");
+    scanf("%f",&alan);
+
+    if(kod == 'T'){
+       ucret = alan * 18;
+       printf("odemeniz gereken ucret : %.2f",ucret);
+    }
+    else if(kod == 'B'){
+        ucret = alan * 17;
+        printf("odemeniz gereken ucret : %.2f",ucret);
+    }
+    else if(kod == 'S'){
+        ucret = 19* alan;
+        printf("odemeniz gereken ucret : %.2f",ucret);
+    }
+    else{
+        printf("gecersiz harf T B S den birini giriniz ");
+    }
+}
 
 
