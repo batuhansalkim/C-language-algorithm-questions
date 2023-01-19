@@ -382,6 +382,7 @@ int main(){
 */
 
 //22.SORU
+/*
 int main(){
     int gorusme_suresi,ek_ucret;
     printf("kac dk telefon gorusmesi yaptiniz :");
@@ -395,7 +396,37 @@ int main(){
         printf("odemeniz gereken ucret :  %d tl",ek_ucret);
     }
 }
+*/
+//23.SORU
+int main(){
+    int sayi1, sayi2;
+    char op;
+    printf("islem seciniz (+ veya -) :");
+    scanf("%c",&op);
+    printf("lutfen iki tam sayi giriniz :\n");
+    scanf("%d%d",&sayi1,&sayi2);
 
+    if((sayi1==0) || (sayi2==0)){
+        printf("islem yapilamaz sayilar sifirdan farkli olsun");
+    }
+    else{
+        printf("1/%d %c 1/%d\n",sayi1,op,sayi2);
+        switch(op){
+            case '+':{
+                printf("%d/%d",sayi1+sayi2/sayi1*sayi2);
+            }
+            break;
+
+            case '-':{
+                printf("%d/%d",sayi1-sayi2/sayi1*sayi2);
+            }
+            break;
+            default:{
+                printf("yanlis operator girisi yapildi");
+            }
+        }
+    }
+}
 
 
 
