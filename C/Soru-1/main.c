@@ -398,6 +398,7 @@ int main(){
 }
 */
 //23.SORU
+/*
 int main(){
     int sayi1, sayi2;
     char op;
@@ -427,7 +428,11 @@ int main(){
         }
     }
 }
+*/
+//24.SORU
+int main(){
 
+}
 
 
 
