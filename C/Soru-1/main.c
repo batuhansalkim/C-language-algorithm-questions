@@ -380,7 +380,6 @@ int main(){
     }
 }
 */
-
 //22.SORU
 /*
 int main(){
@@ -431,7 +430,21 @@ int main(){
 */
 //24.SORU
 int main(){
-
+    char ch;
+    int sira;
+    printf("Bir karakter giriniz:\n");
+    scanf("%c",&ch);
+    if((ch>='A') && (ch<='Z'))
+    {
+        sira = (int)ch-(int)'A'+1;
+    }
+    else if((ch>='a')&& (ch<='z')){
+        sira = (int)ch - (int)'a'+1;
+    }
+    else{
+        printf("HATA harf girisi yapiniz ");
+    }
+    printf("%c : %d. harftir",ch,sira);
 }
 
 
