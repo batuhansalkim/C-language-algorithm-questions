@@ -429,6 +429,7 @@ int main(){
 }
 */
 //24.SORU
+/*
 int main(){
     char ch;
     int sira;
@@ -446,7 +447,22 @@ int main(){
     }
     printf("%c : %d. harftir",ch,sira);
 }
+*/
+//25 .SORU
+int main(){
+    int i,n;
+    float x,seri;
 
+    printf("pozitif sayi giriniz :");
+    scanf("%d",&n);
+    printf("reel sayi giriniz :");
+    scanf("%f",&x);
+
+    for(i=1;i<=2*n-1;i+=2){
+        seri+=i/pow(x,i+1);
+    }
+    printf("Seri  =%f",seri);
+}
 
 
 
