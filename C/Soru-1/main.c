@@ -4,8 +4,16 @@
 #include <math.h>
 #define PI 3.141
 #define tam 150
-//SORU 1
+#define tavhiz 0.038
+#define kushiz 0.012
+#define vergi_kitap 4.0
+#define vergi_temelgida 5.6
+#define vergi_luks 19.6
+#define kitap 0
+#define gida 1
+#define luks 2
 
+//SORU 1
 /*
 int main(){
     int a, b, c, x;
@@ -36,7 +44,6 @@ int main(){
 
 }
 */
-
 //3.SORU
 /*
 int main(){
@@ -67,7 +74,6 @@ int main(){
 
 }
 */
-
 // 4. SORU
 /*
 int main(){
@@ -93,7 +99,6 @@ int main(){
 
 }
 */
-
 //5.Soru
 /*
 int main(){
@@ -125,7 +130,6 @@ int main(){
     printf("sayilarin toplami : %d",sonuc);
 }
 */
-
 //7. SORU
 /*
 int main(){
@@ -139,8 +143,6 @@ int main(){
 
 }
 */
-
-
 //8. SORU
 /*
 int main(){
@@ -160,7 +162,7 @@ int main(){
       }
 }
 */
-
+//9.SORU
 /*
 //9. SORU
 int main(){
@@ -178,7 +180,6 @@ int main(){
     }
 }
 */
-
 //10. SORU
 /*
 int main(){
@@ -196,7 +197,6 @@ int main(){
 
 }
 */
-
 //11.SORU
 /*
 int main(){
@@ -211,7 +211,6 @@ int main(){
     printf("Mil : %f\n Km: %f",yol,km);
 }
 */
-
 //12.SORU
 /*
 int main(){
@@ -221,7 +220,6 @@ int main(){
     printf("Havuzumuz %f kadar su alabilir.",en*boy*yukseklik);
 }
 */
-
 //13.SORU
 /*
 int main(){
@@ -237,7 +235,6 @@ int main(){
     printf("B sayisinin degeri : %d\n",b);
 }
 */
-
 //14.SORU
 /*
 int main(){
@@ -279,7 +276,6 @@ int main(){
     }
 }
 */
-
 //16.SORU
 /*
 int main(){
@@ -467,6 +463,7 @@ int main(){
 }
 */
 //26. SORU
+/*
 int main(){
     int no,boy,fark,minboy,minno;
     printf("ogrenci no :");
@@ -493,9 +490,65 @@ int main(){
 
 }
 
+*/
+//27. SORU
+/*
+int main(){
+    float tavsan=1042,kus=2272;
+    int yil = 0;
+    while(tavsan<kus){
+        tavsan += tavsan*tavhiz;
+        kus += kus*kushiz;
+        yil++;
+        printf("%d.yil:\n tavsan=%d kus=%d\n",yil,(int)tavsan,(int)kus);
 
+    }
+    printf("tavsanlar kuslari %d. yilda gecer",yil);
+}
+*/
+//28. SORU
+/*
+int main(){
+    int kod;
+    float fiyat;
 
+    printf("urunun fiyat girisini yapiniz :");
+    scanf("%f",&fiyat);
+    scanf("urunun kod girisini yapiniz :");
+    scanf("%d",&kod);
 
+    switch(kod){
+    case 0:
+        printf("fiyat : %f",fiyat+ fiyat*vergi_kitap/100);
+        break;
+    case 1:
+        printf("fiyat : %f",fiyat+fiyat*vergi_temelgida/100);
+        break;
+    case 2:
+        printf("fiyat : %f",fiyat + fiyat*vergi_luks/100);
+        break;
+    default:
+        printf("HATA gecersiz kod girisi ");
+    }
+}
+*/
+//29.SORU
+int main(){
+    char cumle[100];
+    int i=0;
+    int sayac=0;
+
+    printf("lutfen bir cumle giriniz :");
+    gets(cumle);
+
+    while(cumle[i]){
+        if(cumle[i]==32){
+            sayac++;
+        }
+        i++;
+    }
+    printf("girilen cumledeki kelime sayisi : %d\n",sayac+1);
+}
 
 
 

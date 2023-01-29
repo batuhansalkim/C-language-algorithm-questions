@@ -4,32 +4,36 @@
 	<ActiveTarget name="Debug" />
 	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7378" topLine="54" />
+			<Cursor1 position="10550" topLine="92" />
 		</Cursor>
 		<Folding>
-			<Collapse line="7" />
-			<Collapse line="18" />
-			<Collapse line="39" />
-			<Collapse line="70" />
-			<Collapse line="96" />
-			<Collapse line="110" />
-			<Collapse line="128" />
-			<Collapse line="143" />
-			<Collapse line="162" />
-			<Collapse line="181" />
-			<Collapse line="199" />
+			<Collapse line="16" />
+			<Collapse line="27" />
+			<Collapse line="47" />
+			<Collapse line="77" />
+			<Collapse line="102" />
+			<Collapse line="116" />
+			<Collapse line="133" />
+			<Collapse line="146" />
+			<Collapse line="165" />
+			<Collapse line="183" />
+			<Collapse line="200" />
 			<Collapse line="214" />
-			<Collapse line="224" />
-			<Collapse line="240" />
-			<Collapse line="254" />
-			<Collapse line="282" />
-			<Collapse line="304" />
-			<Collapse line="317" />
-			<Collapse line="330" />
-			<Collapse line="343" />
-			<Collapse line="360" />
-			<Collapse line="384" />
-			<Collapse line="400" />
+			<Collapse line="223" />
+			<Collapse line="238" />
+			<Collapse line="252" />
+			<Collapse line="279" />
+			<Collapse line="301" />
+			<Collapse line="314" />
+			<Collapse line="327" />
+			<Collapse line="340" />
+			<Collapse line="357" />
+			<Collapse line="380" />
+			<Collapse line="396" />
+			<Collapse line="428" />
+			<Collapse line="448" />
+			<Collapse line="465" />
+			<Collapse line="494" />
 		</Folding>
 	</File>
 </CodeBlocks_layout_file>
