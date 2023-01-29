@@ -3,6 +3,7 @@
 #include <string.h>
 #include <math.h>
 #define PI 3.141
+#define tam 150
 //SORU 1
 
 /*
@@ -449,6 +450,7 @@ int main(){
 }
 */
 //25 .SORU
+/*
 int main(){
     int i,n;
     float x,seri;
@@ -463,7 +465,33 @@ int main(){
     }
     printf("Seri  =%f",seri);
 }
+*/
+//26. SORU
+int main(){
+    int no,boy,fark,minboy,minno;
+    printf("ogrenci no :");
+    scanf("%d",&no);
+    printf("ogrenci boy : ");
+    scanf("%d",&boy);
 
+    minno = no;
+    fark = abs(boy - tam);
+
+    while(no>0){
+        printf("ogrenci no : ");
+        scanf("%d",&no);
+        printf("ogrenci boy :");
+        scanf("%d",&boy);
+
+        if(abs(boy-tam)<fark){
+            fark = abs(boy-tam);
+            minno=no;
+            minboy=boy;
+        }
+    }
+    printf("\n%d numarali ogrenci %d cm boyuyla %d cm e en yakindir.",minno,minboy,tam);
+
+}
 
 
 
